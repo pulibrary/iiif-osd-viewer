@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title></title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/iiifOsdViewer.css">
+    <style>
+      .viewer {
+        border: 1px solid #ccc;
+        height: 500px;
+        margin: 40px 0 0 40px;
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="viewer">
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/openseadragon.js"></script>
+    <script src="js/jQuery.iiifOsdViewer.js"></script>
+    <script>
+      $('.viewer').iiifOsdViewer({
+
+        data: [{
+          iiifServer: 'https://sul-stacks.stanford.edu/image/iiif',
+          images: [
+            { id: 'bh059ts1689%252F00008470_0001', height: 12437, width: 9776 },
+            { id: 'cn006dx2288%252FW769_000001_300', height: 5000, width: 3706 },
+            { id: 'cn006dx2288%252FW769_000016_300', height: 4910, width: 3554 },
+            { id: 'cn006dx2288%252FW769_000017_300', height: 4928, width: 3572 },
+            { id: 'cn006dx2288%252FW769_000018_300', height: 4911, width: 3531 }
+          // ]}, {
+          // iiifServer: 'http://scale.ydc2.yale.edu/iiif',
+          // images: [
+          //   { id: 'ac6943bf-dd92-4036-866b-0e5d57de9642', height: 3831, width: 2742 },
+          //   { id: '51091ba2-1ad2-4c7f-ac9b-46cb584b3181', height: 3824, width: 2744 }
+          ]}
+        ]
+
+        // data: [{
+        //   iiifServer: 'https://sul-stacks.stanford.edu/image/iiif',
+        //   images: [{
+        //       id: 'bh059ts1689%252F00008470_0001', height: 12437, width: 9776
+        //     }
+        //   ]
+        // }]
+
+      });
+    </script>
+  </body>
+
+</html>
