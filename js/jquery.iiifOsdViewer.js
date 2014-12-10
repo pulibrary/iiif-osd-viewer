@@ -579,7 +579,7 @@
             imgsListWidth = 0,
             minImgWidth = 100, // to accomodate labels for vertically thin images
             imgsList = $imgsList.find('li[data-horizontal-view-id!=""]'),
-            offset = 40; // 20 = horizontal scrollbar, 20 = label height
+            offset = 30; // 20 = horizontal scrollbar, 10 = label height
 
         $viewport.detach();
 
