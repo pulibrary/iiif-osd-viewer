@@ -668,17 +668,18 @@
   };
 }(jQuery));
 
-
 // source: http://stackoverflow.com/questions/14035083/jquery-bind-event-on-scroll-stops
-jQuery.fn.scrollStop = function(callback) {
-  $(this).scroll(function() {
-    var self  = this,
-    $this = $(self);
+(function($) {
+  $.fn.scrollStop = function(callback) {
+    $(this).scroll(function() {
+      var self  = this,
+      $this = $(self);
 
-    if ($this.data('scrollTimeout')) {
-      clearTimeout($this.data('scrollTimeout'));
-    }
+      if ($this.data('scrollTimeout')) {
+        clearTimeout($this.data('scrollTimeout'));
+      }
 
-    $this.data('scrollTimeout', setTimeout(callback, 250, self));
-  });
-};
+      $this.data('scrollTimeout', setTimeout(callback, 250, self));
+    });
+  };
+}(jQuery));
