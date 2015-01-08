@@ -1,4 +1,4 @@
 iiif-osd-viewer
 ===============
 
-jQuery image viewer plugin to display IIIF images in multiple views
+jQuery image viewer plugin to display IIIF images in multiple views using OpenSeadragon
